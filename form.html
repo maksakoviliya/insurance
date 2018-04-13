@@ -1,0 +1,486 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <title>Страховая компания</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
+          <div class="preloader" id="page-preloader">
+            <div class="loader"></div>
+          </div>
+
+
+
+          <section id="form" class="form">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="section-title text-left">Оформить страховой полис сейчас!</h2>
+                </div>
+              </div>
+              <form action="#">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="form-title">Выберите стоимость страховки</p>
+                    <div id="pmd-range-tooltip-bottom"  class="pmd-range-slider custom-slider"></div>
+                    <!-- <input type="range" min="1" max="10" class="range-slider" value="5" id="pars-range" step="1" list="rangeList1" onchange=""> -->
+                    <datalist id="rangeList1">
+                      <option value="1" label="1"></option>
+                      <option value="2" label="2"></option>
+                      <option value="3" label="3"></option>
+                      <option value="4" label="4"></option>
+                      <option value="5" label="5"></option>
+                      <option value="6" label="6"></option>
+                      <option value="7" label="7"></option>
+                      <option value="8" label="8"></option>
+                      <option value="9" label="9"></option>
+                      <option value="10" label="10"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-3">
+                    <label for="srok">Срок страховки</label>
+                    <select name='srok' id='srok' placeholder='Выберите срок'>
+                      <option disabled>Выберите срок</option>
+                      <option>Пункт 1</option>
+                      <option>Пункт 2</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <label for="date">Дата начала страховки</label>
+                    <input type="date">
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <label for="srok">Ваше гражданство</label>
+                    <select name='srok' id='srok' placeholder='Выберите срок'>
+                      <option disabled>Гражданство</option>
+                      <option>Россия</option>
+                      <option>Пункт 2</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <label for="date">Дата вашего рождения</label>
+                    <input type="text" placeholder="__/__/____">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-3">
+                    <label for="date">Промокод(если есть)</label>
+                    <input type="text" placeholder="Промокод">
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <input type="submit" class="button" value="Купить полис">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section id="form2" class="form">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="section-title text-left">Для вас доступны следующие предложения</h2>
+                </div>
+              </div>
+              <form action="#">
+                <div class="row">
+                  <div class="form-table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th scope="col">Компания</th>
+                          <th scope="col">Цена</th>
+                          <th scope="col">Электронный <br>полис</th>
+                          <th scope="col">Прямая оплата<br>в больнице</th>
+                          <th scope="col">Ассистанс</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td data-label="Компания">Страховя компания "Попа в безопасности"</td>
+                          <td data-label="Цена">17.10лв / 8,25$</td>
+                          <td data-label="Электронный полис" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label="Прямая оплата в больнице" class="table-row"><span class="red">Нет</span></td>
+                          <td data-label="Ассистанс" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label=""><a href="#" class="button">Купить</a></td>
+                        </tr>
+
+                        <tr>
+                          <td data-label="Компания">Страховя компания "Попа в безопасности"</td>
+                          <td data-label="Цена">17.10лв / 8,25$</td>
+                          <td data-label="Электронный полис" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label="Прямая оплата в больнице" class="table-row"><span class="red">Нет</span></td>
+                          <td data-label="Ассистанс" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label=""><a href="#" class="button">Купить</a></td>
+                        </tr>
+
+                        <tr>
+                          <td data-label="Компания">Страховя компания "Попа в безопасности"</td>
+                          <td data-label="Цена">17.10лв / 8,25$</td>
+                          <td data-label="Электронный полис" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label="Прямая оплата в больнице" class="table-row"><span class="red">Нет</span></td>
+                          <td data-label="Ассистанс" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label=""><a href="#" class="button">Купить</a></td>
+                        </tr>
+
+                        <tr>
+                          <td data-label="Компания">Страховя компания "Попа в безопасности"</td>
+                          <td data-label="Цена">17.10лв / 8,25$</td>
+                          <td data-label="Электронный полис" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label="Прямая оплата в больнице" class="table-row"><span class="red">Нет</span></td>
+                          <td data-label="Ассистанс" class="table-row"><span class="green">Есть</span></td>
+                          <td data-label=""><a href="#" class="button">Купить</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+              <!-- <table>
+               <thead>
+                 <tr>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                </tr>
+                <tr>
+                  <td>Страховя компания "Попа в безопасности"</td>
+                  <td>17.10лв / 8,25$</td>
+                  <td><span class="green">Есть</span></td>
+                  <td><span class="red">Нет</span></td>
+                  <td><span class="green">Есть</span></td>
+                  <td><a href="#" class="button">Купить</a></td>
+                </tr>
+                <tr>
+                  <td>Страховя компания "Попа в безопасности"</td>
+                  <td>17.10лв / 8,25$</td>
+                  <td><span class="green">Есть</span></td>
+                  <td><span class="red">Нет</span></td>
+                  <td><span class="green">Есть</span></td>
+                  <td><a href="#" class="button">Купить</a></td>
+                </tr>
+                <tr>
+                  <td>Страховя компания "Попа в безопасности"</td>
+                  <td>17.10лв / 8,25$</td>
+                  <td><span class="green">Есть</span></td>
+                  <td><span class="red">Нет</span></td>
+                  <td><span class="green">Есть</span></td>
+                  <td><a href="#" class="button">Купить</a></td>
+                </tr>
+                <tr>
+                  <td>Страховя компания "Попа в безопасности"</td>
+                  <td>17.10лв / 8,25$</td>
+                  <td><span class="green">Есть</span></td>
+                  <td><span class="red">Нет</span></td>
+                  <td><span class="green">Есть</span></td>
+                  <td><a href="#" class="button">Купить</a></td>
+                </tr>
+                <tr>
+                  <td>Страховя компания "Попа в безопасности"</td>
+                  <td>17.10лв / 8,25$</td>
+                  <td><span class="green">Есть</span></td>
+                  <td><span class="red">Нет</span></td>
+                  <td><span class="green">Есть</span></td>
+                  <td><a href="#" class="button">Купить</a></td>
+                </tr>
+              </tbody>
+            </table> -->
+          </div>
+        </div>
+        <div class="row">
+         <div class="back-btn">
+          <a href="#" class="button">Сделать перерасчет</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="form3" class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="section-title text-left">Данные лица, на которое оформляется страховка</h2>
+      </div>
+    </div>
+    <form action="#">
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Имя застрахованного лица</label>
+          <input type="text" placeholder="Введите имя (На латинице)">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Фамилия застрахованного лица</label>
+          <input type="text" placeholder="Введите фамилию (На латинице)">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Email</label>
+          <input type="text" placeholder="Введите email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Населенный пункт пребывания</label>
+          <input type="text" placeholder="Введите населенный пункт">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Индекс</label>
+          <input type="text" placeholder="Введите индекс">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Адрес</label>
+          <input type="text" placeholder="Введите адрес">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Телефон</label>
+          <input type="text" placeholder="Введите телефон">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label for="date">ЛНЧ или ЕГН (если есть)</label>
+          <input type="text" placeholder="Введите ЛНЧ или ЕГН">
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <label for="date">Серия и номер заграничного паспорта</label>
+          <input type="text" placeholder="Введите серию и номер заграничного паспорта">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="continue-btns">
+          <a href="#" class="button cancel">Изменить выбор</a>
+          <a href="#" class="button">Продолжить</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="form4" class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="section-title text-left">Проверьте данные</h2>
+      </div>
+    </div>
+    <form action="#">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="data">
+            <table>
+              <tr>
+                <td class="bold">Тип страховки:</td><td>Болгария</td>
+              </tr>
+              <tr>
+                <td class="bold">Сумма страхования:</td><td>60 000 BGN / 30 000 EUR</td>
+              </tr>
+              <tr>
+                <td class="bold">Срок страховки:</td><td>на 15 дней</td>
+              </tr>
+              <tr>
+                <td class="bold">Дата начала страховки:</td><td>17/08/2017</td>
+              </tr>
+              <tr>
+                <td class="bold">Гражданство застрахованного:</td><td>RU</td>
+              </tr>
+              <tr>
+                <td class="bold">Дата вашего рождения:</td><td>13/08/1980</td>
+              </tr>
+              <tr>
+                <td class="bold">Имя застрахованного:</td><td>Dmitry</td>
+              </tr>
+              <tr>
+                <td class="bold">Фамилия застрахованного:</td><td>Sudin</td>
+              </tr>
+              <tr>
+                <td class="bold">Город в Болгарии:</td><td>Городище</td>
+              </tr>
+              <tr>
+                <td class="bold">Индекс:</td><td>620000</td>
+              </tr>
+              <tr>
+                <td class="bold">Адрес:</td><td>Улица какая то</td>
+              </tr>
+              <tr>
+                <td class="bold">E-mail:</td><td>mail@mail.ru</td>
+              </tr>
+              <tr>
+                <td class="bold">Телефон:</td><td>+7 (911) 000 00 00</td>
+              </tr>
+              <tr>
+                <td class="bold">ЛНЧ или ЕГН:</td><td>8952961820984098490</td>
+              </tr>
+              <tr>
+                <td class="bold">Номер заграничного паспорта:</td><td>560849849804980498009</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="continue-btns">
+          <a href="#" class="button cancel">Изменить выбор</a>
+          <a href="#" class="button">Продолжить</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="form5" class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="section-title text-left">Ваш заказ</h2>
+      </div>
+    </div>
+    <form action="#">
+      <div class="row">
+        <div class="form-table">
+          <table>
+           <thead>
+            <tr>
+              <th scope="col">Компания</th>
+              <th scope="col">Цена</th>
+              <th scope="col">Имя и фамилия</th>
+              <th scope="col">Номер пспорта</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Компания">Страховя компания "Попа в безопасности"</td>
+              <td data-label="Цена">17.10лв / 8,25$</td>
+              <td data-label="Имя и фамилия">Rahat lokom ibn boom boom</td>
+              <td data-label="Номер пспорта">5805 62555584</td>
+              <td><div class="control-btns">
+                <a href="#"><img src="img/eye.png" alt=""></a>
+                <a href="#"><img src="img/trash.png" alt=""></a>
+              </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="add">
+          <img src="img/man.png" alt="">
+          <a href="#">Добавить еще человека</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="continue-btns">
+        <a href="#" class="button cancel">Изменить данные</a>
+        <a href="#" class="button">Продолжить</a>
+      </div>
+    </div>
+  </form>
+</div>
+</section>
+
+<section id="form4" class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="section-title text-left">Способ оплаты</h2>
+      </div>
+    </div>
+    <form action="#">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="radio">
+            <input id="male" type="radio" name="pay" value="card">
+            <label for="male">Оплатить банковской картой</label>
+            <input id="female" type="radio" name="pay" value="cash">
+            <label for="female">Оплатить наличными курьеру</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="section-title text-left">Способ доставки</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="radio">
+            <input id="mail" type="radio" name="pay" value="mail">
+            <label for="mail">Доставка по EMAIL</label>
+            <input id="origin" type="radio" name="pay" value="origin">
+            <label for="origin">Доставка оригинала по Болгарии бесплатно</label>
+            <input id="country" type="radio" name="pay" value="country">
+            <label for="country">Доставка в Вашу страну за 10 дней (10 евро)</label>
+            <input id="express" type="radio" name="pay" value="express">
+            <label for="express">Доставка в Вашу страну за 3 дня (48 евро)</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="checkbox">
+            <input id="check1" type="checkbox" name="check" value="check1">
+            <label for="check1">Checkbox No. 1</label>
+            <input id="check2" type="checkbox" name="check" value="check2">
+            <label for="check2">Checkbox No. 2</label>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="continue-btns">
+          <a href="#" class="button cancel">Вернуться назад</a>
+          <a href="#" class="button">Заказ и оплата</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       <!--  <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+          </script> -->
+        </body>
+        </html>

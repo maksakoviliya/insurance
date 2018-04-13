@@ -1,0 +1,329 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <title>Страховая компания</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="preloader" id="page-preloader">
+      <div class="loader"></div>
+    </div>
+    
+    <section id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-offset-0">
+            <div class="logo">
+              <a href="index.html" class="logo-link">
+                <img src="img/logo.svg" class="img-responsive" alt="first euro insurance">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 visible-md visible-lg">
+            <div class="call">
+              <div class="phone-link">
+                <a href="tel:+74999999999">+7 (499) <b>999 99 99</b></a>
+              </div>
+              <div class="back-call">
+                <a href="#">перезвоните мне</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="greeting">
+              <h2 class="top">Перед выездом за рубеж, застрахуй свою жизнь!</h2>
+              <h2 class="bottom">Только лучшие страховые компании европы!</h2>
+              <a href="#" class="button">Застраховать жизнь</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="form" class="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="section-title text-left">Оформить страховой полис сейчас!</h2>
+          </div>
+        </div>
+        <form action="#">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="form-title">Выберите стоимость страховки</p>
+            <div id="pmd-range-tooltip-bottom"  class="pmd-range-slider custom-slider"></div>
+            <!-- <input type="range" min="1" max="10" class="range-slider" value="5" id="pars-range" step="1" list="rangeList1" onchange=""> -->
+                      <datalist id="rangeList1">
+                        <option value="1" label="1"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                        <option value="4" label="4"></option>
+                        <option value="5" label="5"></option>
+                        <option value="6" label="6"></option>
+                        <option value="7" label="7"></option>
+                        <option value="8" label="8"></option>
+                        <option value="9" label="9"></option>
+                        <option value="10" label="10"></option>
+                      </datalist>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <label for="srok">Срок страховки</label>
+            <select name='srok' id='srok' placeholder='Выберите срок'>
+            <option disabled>Выберите срок</option>
+              <option>Пункт 1</option>
+              <option>Пункт 2</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <label for="date">Дата начала страховки</label>
+            <input type="date">
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <label for="srok">Ваше гражданство</label>
+            <select name='srok' id='srok' placeholder='Выберите срок'>
+            <option disabled>Гражданство</option>
+              <option>Россия</option>
+              <option>Пункт 2</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <label for="date">Дата вашего рождения</label>
+            <input type="text" placeholder="__/__/____">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <label for="date">Промокод(если есть)</label>
+            <input type="text" placeholder="Промокод">
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <input type="submit" class="button" value="Купить полис">
+          </div>
+        </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="slider">
+    <div class="slider-item" id="item_1">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="section-title text-center">Зачем нужна туристическая страховка</h2>
+              <h3 class="section-subtitle">Многие считают, что это пустая трата денег. Ведь всегда можно заплатить на месте. Но так ли это на самом деле?</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12 col-md-offset-6">
+              <h4>Сравните сами:</h4>
+              <div class="panel-alert">от 50 000 руб.</div>
+              <p>Укус ядовитых рыб: скорая, консультация врача, медикаменты, госпитализация!</p>
+              <div class="panel-sucsees">от 2 700 руб.</div>
+              <p><b>Страховка на две недели в Тайланде от европейской страховой компании с покрытием медицинских расходов на сумму 50 000 евро</b></p>
+              <a href="#" class="button">Подобрать полис</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="slider-item" id="item_2">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="section-title text-center">Зачем нужна туристическая страховка</h2>
+              <h3 class="section-subtitle">Многие считают, что это пустая трата денег. Ведь всегда можно заплатить на месте. Но так ли это на самом деле?</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12 col-md-offset-6">
+              <h4>Сравните сами:</h4>
+              <div class="panel-alert">от 50 000 руб.</div>
+              <p>Укус ядовитых рыб: скорая, консультация врача, медикаменты, госпитализация!</p>
+              <div class="panel-sucsees">от 2 700 руб.</div>
+              <p><b>Страховка на две недели в Тайланде от европейской страховой компании с покрытием медицинских расходов на сумму 50 000 евро</b></p>
+              <a href="#" class="button">Подобрать полис</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="slider-item" id="item_3">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="section-title text-center">Зачем нужна туристическая страховка</h2>
+              <h3 class="section-subtitle">Многие считают, что это пустая трата денег. Ведь всегда можно заплатить на месте. Но так ли это на самом деле?</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12 col-md-offset-6">
+              <h4>Сравните сами:</h4>
+              <div class="panel-alert">от 50 000 руб.</div>
+              <p>Укус ядовитых рыб: скорая, консультация врача, медикаменты, госпитализация!</p>
+              <div class="panel-sucsees">от 2 700 руб.</div>
+              <p><b>Страховка на две недели в Тайланде от европейской страховой компании с покрытием медицинских расходов на сумму 50 000 евро</b></p>
+              <a href="#" class="button">Подобрать полис</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title">Преимущества работы с нами</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-8 col-xs-offset-1 col-md-offset-0">            
+            <div class="advantages-item">
+            <div class="icon">
+                <i class="flaticon-crown"></i>
+              </div>
+              <p>20 лет на рынке страховых услуг</p>
+            </div>
+            <div class="advantages-item">
+            <div class="icon">
+                <i class="flaticon-time-watch"></i>
+              </div>
+              <p>800+ страховых полюсов в день</p>
+            </div>
+            <div class="advantages-item">
+            <div class="icon">
+                <i class="flaticon-umbrella"></i>
+              </div>
+              <p>База из более 10 поставщиков страхового продукта</p>
+            </div>
+            <div class="advantages-item">
+            <div class="icon">
+                <i class="flaticon-arrow"></i>
+              </div>
+              <p>Дешевле на 50% российского страхового продукта</p>
+            </div>
+            <div class="advantages-item">
+            <div class="icon">
+                <i class="flaticon-customer-service"></i>
+              </div>
+              <p>Помощь без промедлений</p>
+            </div>
+            <div class="advantages-item">
+            <div class="icon">
+                <i class="flaticon-medal"></i>
+              </div>
+              <p>Европейское качество продукта</p>
+            </div>
+
+
+          </div>
+          <div class="col-md-5 col-md-offset-1 hidden-sm hidden-xs">
+            <div class="image-wrapper">
+              <img class="img-responsive" src="img/advantages.png" alt="Почему мы">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="section-title text-center">Наши страховые партнеры</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="partners-wrapper">
+              <div class="partner">
+                <img src="img/partners.png" alt="" class="hidden-xs hidden-sm">
+                <img src="img/partners-mobile.png" alt="" class="hidden-md hidden-lg img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2 col-sm-push-5">
+            <div class="footer-info">
+              <i class="flaticon-crown"></i>
+              <div class="footer-info-text">
+                <p>mail@mail.ru</p>
+                <a href="mailto:mail@mail.ru">написать письмо</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-sm-push-5">
+            <div class="footer-info">
+              <i class="flaticon-crown"></i>
+              <div class="footer-info-text">
+                <p>+7 (499) <b>999 99 99</b></p>
+                <a href="#">Перезвоните мне</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-sm-push-5">
+            <div class="footer-info">
+              <i class="flaticon-crown"></i>
+              <div class="footer-info-text">
+                <p>г.Екатеринбург,</p>
+                <span>ул.Розы Люксембург 49,<br>оф.418</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-sm-pull-6">
+            <div class="logo">
+              <a href="index.html" class="logo-link">
+                <img src="img/logo_white.svg" class="img-responsive" alt="first euro insurance">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       <!--  <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
+    </body>
+</html>
